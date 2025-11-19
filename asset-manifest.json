@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Clockly.github.io/static/css/main.16c19c77.css",
+    "main.js": "/Clockly.github.io/static/js/main.3d184b78.js",
+    "static/media/login.png": "/Clockly.github.io/static/media/login.ae15b8996fd6508bab2d.png",
+    "static/media/marca4.jpg": "/Clockly.github.io/static/media/marca4.1e5be648b0ea9a476a28.jpg",
+    "static/media/marca5.png": "/Clockly.github.io/static/media/marca5.3ee6423b997cde06177d.png",
+    "static/media/nucleo-icons.svg": "/Clockly.github.io/static/media/nucleo-icons.01ebecaf50461162d4bc.svg",
+    "static/media/logo.png": "/Clockly.github.io/static/media/logo.e777f02dd2e3b24660ef.png",
+    "static/media/marca1.jpg": "/Clockly.github.io/static/media/marca1.0d8ecf64e40fc9e6a98a.jpg",
+    "static/media/nucleo-icons.eot": "/Clockly.github.io/static/media/nucleo-icons.19abb5402a664606b14c.eot",
+    "static/media/nucleo-icons.ttf": "/Clockly.github.io/static/media/nucleo-icons.d6a66724e7a7bf1bba65.ttf",
+    "static/media/nucleo-icons.woff": "/Clockly.github.io/static/media/nucleo-icons.c82c9b7c40130b7116d3.woff",
+    "static/media/nucleo-icons.woff2": "/Clockly.github.io/static/media/nucleo-icons.cba267483aa6a7cb6e33.woff2",
+    "index.html": "/Clockly.github.io/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.16c19c77.css",
+    "static/js/main.3d184b78.js"
+  ]
+}
