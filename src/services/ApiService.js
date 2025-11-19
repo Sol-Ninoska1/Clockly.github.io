@@ -2,7 +2,7 @@
 class ApiService {
   constructor() {
     // this.baseURL = 'http://localhost:5290/api/Companies'; // URL correcta con Companies
-    this.baseURL = 'http://apimovil.somee.com/api/Companies';
+    this.baseURL = 'https://apimovil.somee.com/api/Companies';
     this.headers = {
       'Content-Type': 'application/json',
     };
