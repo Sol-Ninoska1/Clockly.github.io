@@ -1,0 +1,84 @@
+/**
+=========================================================
+* Argon Dashboard 2 MUI - v3.0.1
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/argon-dashboard-material-ui
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+*/
+
+// @mui material components
+import Link from "@mui/material/Link";
+import Icon from "@mui/material/Icon";
+
+// Argon Dashboard 2 MUI components
+import ArgonButton from "components/ArgonButton";
+import ArgonBox from "components/ArgonBox";
+import ArgonTypography from "components/ArgonTypography";
+
+// Argon Dashboard 2 MUI context
+import { useArgonController } from "context";
+
+// Authentication context
+import { useAuth } from "context/AuthContext";
+
+function SidenavFooter() {
+  const [controller] = useArgonController();
+  const { miniSidenav, darkSidenav } = controller;
+  const { logout, user } = useAuth();
+
+  const handleLogout = () => {
+    // Limpiar localStorage
+    localStorage.removeItem("authToken");
+    localStorage.removeItem("companyId");
+    
+    // Hacer logout en el contexto
+    logout();
+    
+    // Redirigir al login
+    window.location.href = "/authentication/sign-in";
+  };
+
+  return (
+    <ArgonBox opacity={miniSidenav ? 0 : 1} sx={{ transition: "opacity 200ms linear" }}>
+      <ArgonBox position="relative" textAlign="center">
+        {user && (
+          <ArgonBox mb={2}>
+            <ArgonTypography
+              variant="caption"
+              color={darkSidenav ? "white" : "text"}
+              fontWeight="medium"
+              textAlign="center"
+            >
+              Usuario logueado: {user.email}
+            </ArgonTypography>
+          </ArgonBox>
+        )}
+        <ArgonButton
+          component="a"
+          onClick={handleLogout}
+          color="error"
+          size="small"
+          fullWidth
+          sx={{
+            cursor: "pointer",
+            "&:hover": {
+              backgroundColor: "error.dark",
+            },
+          }}
+        >
+          <Icon sx={{ mr: 1 }}>logout</Icon>
+          Cerrar sesión
+        </ArgonButton>
+      </ArgonBox>
+    </ArgonBox>
+  );
+}
+
+export default SidenavFooter;
