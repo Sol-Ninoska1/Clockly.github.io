@@ -190,7 +190,7 @@ export const AuthProvider = ({ children }) => {
       
       // Si es un error de red, mostrar mensaje de conexión
       if (error.name === 'TypeError' && error.message.includes('fetch')) {
-        throw new Error("No se puede conectar con el servidor. Verifica que la API esté corriendo en http://localhost:5290");
+        throw new Error("No se puede conectar con el servidor. Verifica que la API esté corriendo en http://apimovil.somee.com");
       }
       
       throw error;
