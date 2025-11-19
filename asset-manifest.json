@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Clockly.github.io/static/css/main.16c19c77.css",
-    "main.js": "/Clockly.github.io/static/js/main.3d184b78.js",
+    "main.js": "/Clockly.github.io/static/js/main.8d369efe.js",
     "static/media/login.png": "/Clockly.github.io/static/media/login.ae15b8996fd6508bab2d.png",
     "static/media/marca4.jpg": "/Clockly.github.io/static/media/marca4.1e5be648b0ea9a476a28.jpg",
     "static/media/marca5.png": "/Clockly.github.io/static/media/marca5.3ee6423b997cde06177d.png",
@@ -16,6 +16,6 @@
   },
   "entrypoints": [
     "static/css/main.16c19c77.css",
-    "static/js/main.3d184b78.js"
+    "static/js/main.8d369efe.js"
   ]
 }
