@@ -44,7 +44,7 @@
     "predeploy": "npm run build && cp ./build/index.html ./build/404.html",
     "deploy": "gh-pages -d build"
   },
-  "proxy": "http://localhost:5290",
+  "proxy": "http://apimovil.somee.com",
   "eslintConfig": {
     "extends": [
       "react-app",
