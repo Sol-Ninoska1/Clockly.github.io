@@ -150,7 +150,7 @@ export const AuthProvider = ({ children }) => {
     try {
       dispatch({ type: "SET_LOADING", payload: true });
        //http://localhost:5290/api/Companies
-      const response = await fetch("https://apimovil.somee.com/api/Companies/admin/login", {
+      const response = await fetch("https://www.apimovil.somee.com/api/Companies/admin/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -190,7 +190,7 @@ export const AuthProvider = ({ children }) => {
       
       // Si es un error de red, mostrar mensaje de conexión
       if (error.name === 'TypeError' && error.message.includes('fetch')) {
-        throw new Error("No se puede conectar con el servidor. Verifica que la API esté corriendo en https://apimovil.somee.com");
+        throw new Error("No se puede conectar con el servidor. Verifica que la API esté corriendo en https://www.apimovil.somee.com");
       }
       
       throw error;
